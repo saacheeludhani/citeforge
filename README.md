@@ -1,23 +1,23 @@
-CiteForge 🔎
+# CiteForge 🔎
 
-Evidence-Based Generative Engine Optimization (GEO)
+### Evidence-Based Generative Engine Optimization (GEO)
 
 Team: Schrödinger's Code
 
 CiteForge is a proposed evidence-based GEO platform that helps evaluate how effectively webpages are represented and cited by AI-powered search systems. It generates relevant queries, identifies content gaps, measures citation performance, improves weak content, and checks webpage integrity.
 
-🚨 Problem Statement
+## 🚨 Problem Statement
 
 - High Google rankings do not guarantee citations in AI-generated answers.
 - GEO techniques are often applied without sufficient verification.
 - AI-generated answers may misrepresent sources or contain unsupported claims.
 - Existing tools may separate visibility tracking, citation testing, and content improvement.
 
-💡 Proposed Solution
+## 💡 Proposed Solution
 
 CiteForge brings webpage creation, AI citation evaluation, content improvement, and integrity checking into one feedback-driven workflow.
 
-✨ Key Features
+## ✨ Key Features
 
 - AI Query Generation: Generates relevant queries for evaluating webpage visibility.
 - Content Gap Detection: Identifies unanswered questions, missing information, and weak passages.
@@ -27,7 +27,7 @@ CiteForge brings webpage creation, AI citation evaluation, content improvement, 
 - Integrity Auditing: Checks webpage responses for consistency across user-agent identities.
 - Automated Improvement: Uses evaluation results to guide iterative content improvement.
 
-⚙️ Technical Approach
+## ⚙️ Technical Approach
 
 1. Topic Input: Accepts the assigned topic.
 2. Query Strategist: Generates queries for testing AI search performance.
@@ -37,7 +37,7 @@ CiteForge brings webpage creation, AI citation evaluation, content improvement, 
 6. Editor Agent: Improves weak passages and supports another evaluation cycle.
 7. Integrity Audit & Publishing: Checks content consistency before publishing.
 
-🛠️ Proposed Technology Stack
+## 🛠️ Proposed Technology Stack
 
 Technology| Purpose
 Python| Workflow automation and integrity checks
@@ -49,7 +49,7 @@ GitHub Pages / Netlify| Potential free hosting options
 
 The final stack may change based on implementation and available services.
 
-🌍 Expected Impact
+## 🌍 Expected Impact
 
 - Makes GEO evaluation more evidence-based.
 - Helps identify content gaps and citation weaknesses.
@@ -57,17 +57,15 @@ The final stack may change based on implementation and available services.
 - Supports iterative content improvement using measured results.
 - Promotes consistent, transparent webpage content for people and AI crawlers.
 
-🔬 Project Documentation
+## 🔬 Project Documentation
 
 - "Integrity Auditor" (docs/integrity-auditor.md)
 - "Research Notes" (docs/research/research.md)
 
-👥 Team
+## 👥 Team
 
 Schrödinger's Code
 
-📌 Project Status
+## 📌 Project Status
 
 Hackathon project in development. Features and performance claims will be validated through implementation and testing.
-
----
