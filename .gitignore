@@ -1,0 +1,19 @@
+Python cache files
+
+pycache/
+*.py[cod]
+
+Virtual environments
+
+.venv/
+venv/
+
+Environment variables and secrets
+
+.env
+
+Editor and operating system files
+
+.vscode/
+.DS_Store
+Thumbs.db
