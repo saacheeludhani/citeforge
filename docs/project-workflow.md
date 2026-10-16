@@ -1,6 +1,6 @@
-CiteForge — Project Workflow
+# CiteForge — Project Workflow
 
-Overview
+## Overview
 
 CiteForge follows a feedback-driven workflow to evaluate webpage citation performance, identify content gaps, improve weak passages, and check content consistency.
 
@@ -32,14 +32,14 @@ Weak passages and missing information are identified. Suggested improvements can
 
 The Integrity Auditor checks webpage responses for consistency across different user-agent identities. The webpage can then proceed towards publishing after the required checks.
 
-Feedback Loop
+## Feedback Loop
 
 Evaluation results help identify weaknesses, guide content improvements, and support repeated testing.
 
-Expected Outcome
+## Expected Outcome
 
 The workflow aims to make GEO evaluation more evidence-based and encourage accurate, consistent, and transparent webpage content.
 
-Implementation Status
+## Implementation Status
 
 This document describes the proposed workflow. Individual stages and their results must be verified through implementation and testing.
