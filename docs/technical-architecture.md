@@ -6,35 +6,35 @@ CiteForge is designed as a modular workflow for evaluating webpage performance i
 
 ## 2. System Components
 
-Topic Input
+### Topic Input
 
 Receives the assigned topic and initiates the workflow.
 
-Query Strategist
+### Query Strategist
 
 Generates relevant queries to evaluate how AI-powered search systems respond to the topic.
 
-Page Builder
+### Page Builder
 
 Creates a webpage using HTML and CSS and adds structured metadata using JSON-LD.
 
-Citation Arena
+### Citation Arena
 
 Tests the webpage against AI search systems and records observed citation results.
 
-Performance Scoring
+### Performance Scoring
 
 Evaluates results using proposed measures such as citation rate, content coverage, and claim accuracy.
 
-Editor Agent
+### Editor Agent
 
 Uses evaluation results to identify weak content and suggest improvements for another testing cycle.
 
-Integrity Auditor
+### Integrity Auditor
 
 Compares webpage responses across different user-agent identities and checks relevant website metadata and crawler-access rules.
 
-Publishing
+### Publishing
 
 Supports making the evaluated webpage available through a suitable hosting platform.
 
