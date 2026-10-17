@@ -30,27 +30,27 @@ The platform is designed to provide measurable evaluation results and actionable
 
 ## ✨ Key Features
 
-1. Answer Fidelity Checker
+### 1. Answer Fidelity Checker
 
 Evaluates whether information in AI-generated answers accurately reflects the claims and evidence available on the source website.
 
-2. Citation Stability Analyzer
+### 2. Citation Stability Analyzer
 
 Tracks citation results across repeated evaluations to identify changes in whether and how often a source is referenced.
 
-3. GEO Benchmarking System
+### 3. GEO Benchmarking System
 
 Measures content performance using evaluation metrics such as citation rate, query coverage, claim accuracy, and citation stability.
 
-4. Self-Improving GEO Assistant
+### 4. Self-Improving GEO Assistant
 
 Recommends targeted content improvements based on evaluation results and supports retesting to compare performance before and after changes.
 
-5. Integrity Auditor
+### 5. Integrity Auditor
 
 Checks website accessibility, compares responses returned for configured user-agent strings, inspects structured data, and examines robots.txt and sitemap availability.
 
-6. Evidence-Based Reporting
+### 6. Evidence-Based Reporting
 
 Brings evaluation results together into a scorecard so users can identify content strengths, weaknesses, and potential next steps.
 
