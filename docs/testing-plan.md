@@ -39,6 +39,6 @@ The purpose of testing is to evaluate the reliability, citation performance, and
 
 Maintain a record of the test queries, sources, observed results, identified issues, and changes made.
 
-8. Testing Status
+## 8. Testing Status
 
 This document defines a proposed testing plan. Actual results should be added only after the corresponding tests have been performed.
