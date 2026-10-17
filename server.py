@@ -33,7 +33,7 @@ from urllib.parse import urlparse
 import citeforge as cf
 
 ROOT = Path(__file__).resolve().parent
-WEB = ROOT / "web"
+WEB = ROOT
 JOBS_DIR = ROOT / "jobs"
 HOST = os.environ.get("HOST", "127.0.0.1")
 PORT = int(os.environ.get("PORT", "8000"))
