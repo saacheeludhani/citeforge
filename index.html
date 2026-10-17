@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CiteForge | Become the source AI trusts</title>
+<meta name="description" content="CiteForge turns expertise into trustworthy webpages, then tests whether AI finds, cites and accurately represents them.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=Syne:wght@700;800&family=Fraunces:wght@400;500&family=IBM+Plex+Mono:wght@400;500&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<meta name="citeforge-api" content="">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="pb"></div>
+<nav><div class="wrap">
+ <a class="logo" href="#top"><svg viewBox="0 0 26 26" fill="none" stroke="#c8ff3d" stroke-width="1.6"><rect x="4" y="3" width="16" height="20" rx="2"/><path d="M8 9h8M8 13h5M8 17h3M21 3v4M19 5h4"/></svg>CiteForge</a>
+ <div class="links"><a href="#platform">Platform</a><a href="#how">How it works</a><a href="#teams">For teams</a><a href="#faq">Resources</a></div>
+ <div class="nr"><a class="t" href="#signin">Sign in</a><a class="btn p" href="#arena">Try the demo &#8599;</a></div>
+</div></nav>
+
+<header class="hero" id="top"><div class="orb o1"></div><div class="orb o2"></div><div class="wrap">
+ <div>
+  <p class="mono eyebrow cy">&#9679; The evidence-based AI citation platform</p>
+  <h1>Don't just rank. <em class="sq">Become the source AI <span id="rw">trusts</span>.</em></h1>
+  <p class="s">Turn your expertise into trustworthy webpages. Then test whether AI finds, cites, and accurately represents them.</p>
+  <div class="cta"><a class="btn p" href="#arena">See CiteForge in action &#8599;</a><a class="btn g" href="#platform">Explore the platform</a></div>
+  <span class="hand">psst... ranking #1 doesn't mean AI cites you &#8599;</span><p class="mono note">Built on evidence. Improved through testing.</p>
+ </div>
+ <div class="mock" aria-label="Illustration of a page and the AI answer that cites it">
+  <div class="badge">&#10003; Evidence connected</div><div class="sticker">PS-04<br>Get Cited!</div>
+  <div class="c1"><span class="mono" style="color:#5b3df5">Atlas Research / Explainers</span><h4>How long does a home battery last?</h4><p>A practical guide to battery lifespan, cycle life, and the evidence behind the numbers.</p><div class="hl">Clear claims. Traceable sources.</div></div>
+  <div class="c2"><b>An answer with a source.</b>Home battery lifespan depends on chemistry, cycling, and operating conditions. Compare both years and cycle life. [1]<div class="q mono">[1] How long does a home battery last?</div></div>
+ </div>
+</div></header>
+<div class="strip"><div class="wrap"><span>A new layer of visibility.<br>A higher standard of evidence.</span><span class="i">Find information gaps</span><span class="i">Verify factual claims</span><span class="i">Measure AI citations</span></div></div>
+
+<div class="tick" aria-hidden="true"><div class="tk" id="tk"></div></div>
+<section class="sec arena" id="arena"><div class="wrap">
+ <p class="mono eyebrow cy">Try it / live</p><h2>Watch a page <span class="hand">earn</span> its citation.</h2>
+ <div class="live" id="live">
+ <p class="mono eyebrow cy" style="margin:28px 0 12px">Run it on your own topic</p>
+ <form id="lf" class="lf" novalidate>
+  <label>Topic<input id="lt" maxlength="160" autocomplete="off" placeholder="e.g. home battery lifespan"></label>
+  <label>Published page URL <small>optional, enables the citation test</small><input id="lu" type="url" autocomplete="off" placeholder="https://you.github.io/page/"></label>
+  <button class="btn p" id="lgo" type="submit">Run pipeline &#8599;</button>
+ </form>
+ <p class="lnote" id="lbanner" role="status" hidden></p>
+ <div id="lprog" hidden><div class="lbar"><i id="lbi"></i></div><p class="mono" id="lmsg" aria-live="polite"></p></div>
+ <div id="lres" class="lres" hidden></div>
+ <p class="mono eyebrow cy" style="margin:40px 0 0">Or step through a simulated example</p>
+</div>
+ <div class="chips" id="chips" role="group" aria-label="Sample questions"></div>
+ <div class="pipe"><div class="pn"><b>1. Query</b>User asks an AI</div><div class="pn"><b>2. Page</b>Passage extracted</div><div class="pn"><b>3. Answer</b>AI writes, with source</div><div class="pn"><b>4. Audit</b>Claim checked</div></div>
+ <div class="aout"><div class="ap"><span class="mono">Passage from our page</span><span id="ps">Pick a question above.</span></div><div class="ap"><span class="mono">AI answer (simulated)</span><span id="an"></span><div class="verd" id="vd"></div></div></div>
+ <p class="fine" style="text-align:left">Simulation with sample content to show the workflow. Not live citation results.</p>
+ <div class="ba"><div class="bah"><span class="hand" id="bl"></span><button id="sw" class="swt" aria-pressed="false" aria-label="Toggle before and after"><i></i></button></div>
+ <div class="aout"><div class="ap"><span class="mono">Page passage</span><span id="bp"></span></div><div class="ap"><span class="mono">AI answer (simulated)</span><span id="bq"></span><div class="meter"><span class="mono">Extractability score (illustrative)</span><div class="mt"><b id="bm"></b></div><span id="bn" class="mono"></span></div></div></div></div>
+</div></section>
+
+<section class="sec" id="platform"><div class="wrap">
+ <div class="head"><div><p class="mono eyebrow">01 / A new discovery layer</p><h2>The next click<br>may never happen.</h2></div>
+ <p class="lead">People ask AI. AI gives the answer. Your page can rank first on Google and still be missing from that conversation.</p></div>
+ <div class="two">
+  <div class="path a"><div class="mini">How long does a home battery last?<i></i><u>Your guide to home batteries</u><i></i>Battery lifespan, explained<i></i></div><div><p class="mono eyebrow" style="margin:0">The familiar path</p><h3>Rank. Click. Read.</h3><p>The reader chooses a link, then finds the answer.</p></div></div>
+  <div class="path b"><div class="mini" style="color:var(--ink)">Battery life depends on chemistry, usage, and temperature. [1]<br><span class="mono" style="color:var(--teal)">[1] Your evidence, cited</span></div><div><p class="mono eyebrow" style="margin:0">The emerging path</p><h3>Ask. Answer. Cite.</h3><p>The answer arrives first. Your source needs to be part of it.</p></div></div>
+ </div>
+</div></section>
+
+<section class="sec" id="how" style="padding-top:0"><div class="wrap">
+ <div class="head"><div><p class="mono eyebrow">02 / How CiteForge works</p><h2>One evidence loop.<br>From expertise to answer.</h2></div><p class="lead" style="max-width:260px">Not another content volume engine. A system for becoming a better source.</p></div>
+ <div class="steps">
+  <div class="step"><div class="top"><span class="ico">&#9678;</span><span class="mono">01</span></div><h3>Find what's missing</h3><p>Generate 200+ questions across user intents. Surface gaps that leave AI without a complete answer.</p></div>
+  <div class="step"><div class="top"><span class="ico">&#9636;</span><span class="mono">02</span></div><h3>Build a better source</h3><p>Create structured HTML pages with direct answers, FAQs, verified claims, sources and JSON-LD.</p></div>
+  <div class="step"><div class="top"><span class="ico">&#9879;</span><span class="mono">03</span></div><h3>Test the citation</h3><p>Run queries on live-web AI search. See when your page is cited, and what the answer gets right.</p></div>
+  <div class="step"><div class="top"><span class="ico">&#8635;</span><span class="mono">04</span></div><h3>Improve with evidence</h3><p>Rewrite weak passages, republish and retest. Learn what changes, not just what scores.</p></div>
+ </div>
+</div></section>
+
+<section class="sec band" id="studio"><div class="wrap">
+ <div class="head"><div><p class="mono eyebrow">03 / The source layer</p><h2>Made for people.<br>Legible to AI.</h2></div><p class="lead">Direct answers, factual claims, and evidence that can be traced back to their source.</p></div>
+ <div class="studio">
+  <div class="sbar"><span>Source studio / Home battery lifespan</span><span class="mono" style="color:var(--teal)">Sample workspace</span></div>
+  <div class="sgrid">
+   <div class="side mono" style="text-transform:none;letter-spacing:0"><div class="on">Article</div><div>Structure</div><div>Evidence</div><div>Schema</div></div>
+   <div class="art"><span class="mono eyebrow" style="margin:0">The home energy series</span><h3>How long does a home battery last?</h3>
+    <div class="short"><span class="mono" style="color:var(--teal)">The short answer</span><br>A home battery's useful life depends on chemistry, charge cycles, and operating conditions. Compare the warranty's time, throughput, and retained capacity. [1]</div>
+    <h4 class="serif" style="font-weight:400;font-size:22px;margin:22px 0 4px">Three things the evidence should tell you</h4>
+    <table><tr><td>Calendar life</td><td>How age affects performance, even with light use.</td></tr><tr><td>Cycle life</td><td>How repeated charging and discharging affects capacity.</td></tr><tr><td>Warranty terms</td><td>What is covered, and under which conditions.</td></tr></table></div>
+   <div class="ev"><div class="box"><span>Claims with linked evidence</span><div class="big">8 <small style="font-size:13px;color:var(--mut)">/ 10</small></div><div class="bar"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="o"></i><i class="o"></i></div></div>
+    <div class="box linked"><span class="mono" style="color:var(--teal)">Linked evidence</span><p class="serif" style="margin:8px 0">"Cycle life alone doesn't determine a battery's service life."</p><span>Manufacturer warranty documentation [1]</span></div>
+    <div class="warn"><b>A stronger source starts here</b><br>Add evidence for temperature and installation conditions.</div></div>
+  </div>
+ </div>
+ <div class="checks"><span>Clear answer structure</span><span>Claim-level evidence</span><span>Human review, always</span><span class="mono" style="margin-left:auto">Illustrative product preview</span></div>
+</div></section>
+
+<section class="sec dark" id="testing"><div class="wrap">
+ <div class="head"><div><p class="mono eyebrow">04 / The testing layer</p><h2>Don't guess if it works.<br>See what AI actually cites.</h2></div><p class="lead">Test real questions. Inspect the answers. Measure both citation presence and factual accuracy.</p></div>
+ <div class="dash">
+  <div class="kpis"><div class="kpi">Citation coverage<b>62%</b>31 of 50 test answers cited this source</div><div class="kpi">Answer fidelity<b>87%</b>27 of 31 cited answers matched verified facts</div><div class="kpi">Questions tested<b>50</b>Across 3 AI systems in the latest sample run</div></div>
+  <div class="dgrid">
+   <div class="panel">Citation coverage over test runs
+    <svg viewBox="0 0 520 170" width="100%" role="img" aria-label="Sample line chart of citation coverage rising over test runs"><defs><linearGradient id="g" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#c8ff3d" stop-opacity=".35"/><stop offset="1" stop-color="#c8ff3d" stop-opacity="0"/></linearGradient></defs><g stroke="#34246b"><path d="M0 30h520M0 80h520M0 130h520"/></g><path d="M0 140C60 135 90 120 140 118S200 105 240 92 300 80 340 60 420 40 520 30V170H0Z" fill="url(#g)"/><path d="M0 140C60 135 90 120 140 118S200 105 240 92 300 80 340 60 420 40 520 30" fill="none" stroke="#c8ff3d" stroke-width="2.5"/><path d="M300 0V170" stroke="#4a3a8a" stroke-dasharray="4 4"/><text x="306" y="160" fill="#8b80c0" font-size="9" font-family="monospace">SOURCE UPDATED</text></svg></div>
+   <div class="panel">Coverage by AI system<div class="eng"><div><span>System A</span><span>68%</span></div><i><b style="width:68%"></b></i><div><span>System B</span><span>73%</span></div><i><b style="width:73%"></b></i><div><span>System C</span><span>53%</span></div><i><b style="width:53%"></b></i></div></div>
+  </div>
+  <div class="panel" style="margin-top:14px;display:grid;grid-template-columns:1fr 2fr;gap:16px"><div><span class="mono">Inline test answer</span><br><b style="color:#fff;font-weight:400">"Is cycle life the same as a battery's lifespan?"</b></div><div style="color:#ece8ff">"Not exactly. Service life also depends on age, conditions, and warranty terms." [1]<br><span class="mono" style="color:var(--cyan)">Source cited / claim matches verified evidence</span></div></div>
+ </div>
+ <p class="fine">Illustrative sample data, not verified performance claims. AI systems shown for demonstration only. Results vary by question, model and time.</p>
+</div></section>
+
+<section class="sec"><div class="wrap loop">
+ <div><p class="mono eyebrow">05 / Close the loop</p><h2>Every test should lead to a better source.</h2><p class="lead" style="margin-top:18px">Go beyond a visibility score. CiteForge turns missing citations and inaccurate answers into specific, reviewable improvements.</p>
+ <ol class="ol"><li><span class="mono">01</span><span><b>See the gap</b>Find the questions your source doesn't answer clearly.</span></li><li><span class="mono">02</span><span><b>Make the right change</b>Add missing context, strengthen a claim, or clarify a definition.</span></li><li><span class="mono">03</span><span><b>Test it again</b>Compare new answers against the same question set.</span></li></ol></div>
+ <div class="gapcard"><div class="mono" style="display:flex;justify-content:space-between;color:var(--mut);margin-bottom:10px"><span>From insight to action</span><span>Sample finding</span></div>
+  <div class="gapin"><span class="pill mono">Information gap</span><h4>Explain what the warranty actually covers.</h4><p style="color:var(--mut);font-size:13px">In this sample, AI answers confuse warranty duration with expected service life. Your page doesn't distinguish the two.</p><p class="mono" style="color:var(--teal)">Suggested next step</p><p style="font-size:13px">Add a warranty vs. service life comparison, link the evidence, and rerun the affected questions.</p><a class="btn p" href="#studio">Review in editor</a></div>
+  <p class="mono" style="color:var(--mut);margin:14px 0 0;text-transform:none;letter-spacing:0">Your team reviews every change before publishing.</p></div>
+</div></section>
+
+<section class="sec band" id="teams"><div class="wrap">
+ <p class="mono eyebrow">06 / Built for your expertise</p><h2 style="margin-bottom:36px">A shared source of confidence.</h2>
+ <div class="tabs" role="tablist"><button role="tab" aria-selected="true" data-t="0">Content &amp; editorial</button><button role="tab" aria-selected="false" data-t="1">SEO &amp; growth</button><button role="tab" aria-selected="false" data-t="2">Research &amp; product</button></div>
+ <div class="tp"><div><h3 id="tt"></h3><p id="td"></p></div><ul id="tl"></ul></div>
+</div></section>
+
+<section class="sec std" id="standard"><div class="wrap">
+ <div><p class="mono eyebrow">07 / Our evidence standard</p><h2>Trust is not a prompt.<br>It's a practice.</h2><p style="margin-top:18px;max-width:380px">We don't promise a place in every AI answer. We give you a rigorous way to earn it, and a transparent way to see what happens.</p></div>
+ <ul><li><b>Traceable by design</b>Follow a claim back to the evidence supporting it.</li><li><b>Tested, not assumed</b>Keep the question, model, answer, and citation in view.</li><li><b>Honest about uncertainty</b>AI answers change. A test is a snapshot, not a guarantee. The same page is served to people and AI, with no cloaking.</li></ul>
+</div></section>
+
+<section class="sec" id="faq"><div class="wrap faq">
+ <div><p class="mono eyebrow">08 / A little more clarity</p><h2>Good questions.<br>Clear answers.</h2><p style="color:var(--mut);margin-top:24px">Want to talk through your content?<br><a href="#demo" style="color:var(--teal)">Let's start a conversation &#8599;</a></p></div>
+ <div>
+  <details open><summary>Is this a replacement for SEO?</summary><p>No. SEO helps people and systems discover your pages. CiteForge adds an evidence and testing layer: structuring trustworthy information and checking whether AI systems cite it accurately. Strong rankings don't guarantee inclusion in an AI answer.</p></details>
+  <details><summary>Can CiteForge guarantee that AI will cite my content?</summary><p>No. AI citations are unstable and can differ from run to run. CiteForge measures what happens and helps you improve the source.</p></details>
+  <details><summary>How is citation performance measured?</summary><p>We run generated questions through live-web AI search, record which sources are cited, and check claims against verified facts: citation rate, coverage and claim accuracy.</p></details>
+  <details><summary>Do I need to publish AI-generated content?</summary><p>No. The editor suggests changes for human review. Every claim should link to evidence you can verify.</p></details>
+  <details><summary>What happens after a test finds a problem?</summary><p>You see the gap, make a reviewed change, republish and retest on the same question set.</p></details>
+ </div>
+</div></section>
+
+<footer class="final" id="demo"><div class="wrap">
+ <div class="row"><div><p class="mono eyebrow cy">Your expertise deserves a source</p><h2>Be the source. <em>Not just another result.</em></h2><p>See how CiteForge turns your knowledge into structured evidence, and tests its place in the AI answer.</p><a class="btn p" href="#demo">Get a personal demo &#8599;</a></div>
+  <svg class="orbit" viewBox="0 0 240 240" fill="none" stroke="#c8ff3d" aria-hidden="true"><circle cx="120" cy="120" r="108" opacity=".15"/><circle cx="120" cy="120" r="78" opacity=".25"/><circle cx="120" cy="120" r="48" opacity=".4"/><rect x="98" y="98" width="44" height="44" rx="8" stroke-width="1.5"/><path d="M110 112h20M110 120h14M110 128h8M142 98 190 50M98 98 50 50M98 142 50 190M142 142 190 190" opacity=".7"/><circle cx="190" cy="50" r="9"/><circle cx="50" cy="50" r="9"/><circle cx="50" cy="190" r="9"/><circle cx="190" cy="190" r="9"/></svg></div>
+ <div class="foot"><div><span class="logo" style="font-size:17px">CiteForge</span><p style="margin:10px 0 0">The evidence-based AI citation platform. Turn what you know into what AI cites.</p></div>
+  <div><b>Platform</b><a href="#studio">Source studio</a><a href="#testing">Citation testing</a><a href="#teams">Recommendations</a></div><div><b>Explore</b><a href="#how">How it works</a><a href="#teams">For teams</a><a href="#standard">Evidence standard</a></div><div><b>Connect</b><a href="#demo">Get a demo</a><a href="#contact">Contact</a></div></div>
+ <div class="copy"><span>&copy; 2026 CiteForge. Built on evidence. Team Schr&ouml;dinger's Code, Genesis 2.0.</span><span class="mono" style="color:var(--cyan)">Expertise &bull; Evidence &bull; Citation</span></div>
+</div></footer>
+
+<div id="modal" class="modal" hidden><div class="mbox" role="dialog" aria-modal="true" aria-label="CiteForge"><button class="mx" type="button" aria-label="Close">&times;</button><div class="mbody"></div></div></div>
+<template id="t-demo"><div class="fm"><p class="mono eyebrow">Get a personal demo</p><h2>Let's walk through your page.</h2><p class="lead">Tell us what you publish and we will show how CiteForge finds gaps, tests citations and improves your source.</p><form data-msg="Thanks! Your demo request is noted."><label>Name<input type=text required autocomplete=name></label><label>Email<input type=email required autocomplete=email></label><label>What do you publish?<textarea rows=3 required></textarea></label><button class="btn p" type="submit">Request demo &#8599;</button></form></div></template>
+<template id="t-signin"><div class="fm"><p class="mono eyebrow">Welcome back</p><h2>Sign in to CiteForge.</h2><p class="lead">Pick up your tests and source drafts where you left off.</p><form data-msg="Signed in (prototype)."><label>Email<input type=email required autocomplete=email></label><label>Password<input type=password required autocomplete=current-password></label><button class="btn p" type="submit">Sign in &#8599;</button></form></div></template>
+<template id="t-contact"><div class="fm"><p class="mono eyebrow">Contact</p><h2>Good questions. Clear answers.</h2><p class="lead">Want to talk through your content? Send us a note.</p><form data-msg="Message sent. Thank you!"><label>Name<input type=text required autocomplete=name></label><label>Email<input type=email required autocomplete=email></label><label>Message<textarea rows=3 required></textarea></label><button class="btn p" type="submit">Send message &#8599;</button></form></div></template>
+<script src="script.js"></script>
+<script src="live.js"></script>
+</body>
+</html>
