@@ -1,88 +1,111 @@
 # CiteForge — Evidence-Based Generative Engine Optimization
 
-Making AI Search Visibility Measurable, Verifiable, and Improveable.
+**Making AI Search Visibility Measurable, Verifiable, and Improveable.**
+
+CiteForge is a Generative Engine Optimization (GEO) platform designed to help website owners evaluate how their content performs across AI-powered search and answer systems. It aims to make AI search visibility more measurable through evidence-based evaluation, citation analysis, content integrity checks, and targeted content improvements.
+
+> **Project status:** Under development 🚧  
+> CiteForge is a hackathon project. Features and evaluation results should be interpreted according to their current implementation and testing status.
+
+---
 
 ## 📌 Project Overview
 
-CiteForge is an evidence-based Generative Engine Optimization (GEO) platform designed to help website owners understand how their content performs across AI-powered search and answer systems.
+Traditional Search Engine Optimization (SEO) focuses primarily on improving a website's visibility in search engine results. Generative Engine Optimization (GEO) addresses a related challenge: whether AI-powered systems discover, cite, and accurately represent information from a website when generating answers.
 
-Unlike traditional SEO, which primarily focuses on search engine rankings, GEO focuses on whether AI systems discover, reference, and accurately represent information from a website.
+CiteForge aims to help website owners understand this emerging form of visibility by evaluating citation behavior, query coverage, claim accuracy, and website integrity.
 
-CiteForge aims to evaluate content visibility, citation consistency, claim accuracy, and content integrity, then recommend evidence-based improvements.
-
-Project Status: Under Development 🚧
+Rather than relying solely on rankings or assumptions, the platform is designed to produce measurable observations, identify content weaknesses, and recommend improvements that can be evaluated through subsequent testing.
 
 ## 🎯 Problem Statement
 
-As users increasingly rely on AI-powered search systems for answers, website owners face new challenges:
+As users increasingly rely on AI-powered search and answer systems, website owners face several challenges:
 
-- Their content may not be cited in AI-generated answers.
-- Important claims may be omitted or inaccurately represented.
-- Citations may vary across queries or repeated evaluations.
-- Website content may need improvement to make its information easier for AI systems to discover and interpret.
-- Website owners lack a unified way to evaluate AI search visibility and content integrity.
+- **Citation invisibility:** Relevant content may not be referenced in AI-generated answers.
+- **Information loss:** Important claims may be omitted or inaccurately represented.
+- **Inconsistent citations:** Citation results may vary across queries, providers, or repeated evaluations.
+- **Limited evaluation tools:** Website owners may lack a unified way to measure AI search visibility and content accuracy.
+- **Unclear optimization strategies:** Content improvements may be made without a reliable process for evaluating their impact.
+- **Website integrity concerns:** Accessibility, structured data, and crawler-facing responses can affect how content is discovered and interpreted.
+
+CiteForge addresses these challenges through a structured evaluation and improvement workflow.
 
 ## 💡 Our Solution
 
-CiteForge proposes an integrated GEO evaluation workflow that analyzes website content, tests its visibility across supported AI search systems, evaluates citation and claim accuracy, and identifies areas for improvement.
+CiteForge proposes an integrated GEO workflow that analyzes website content, evaluates its performance against relevant queries, examines citation and claim accuracy, and identifies opportunities for improvement.
 
-The platform is designed to provide measurable evaluation results and actionable recommendations instead of relying on assumptions about AI search visibility.
+The platform brings together four core activities:
+
+1. **Evaluate** — Measure visibility and representation across supported test queries.
+2. **Verify** — Compare answer claims and citations against available source evidence.
+3. **Improve** — Generate targeted recommendations for clearer, more accessible content.
+4. **Retest** — Compare evaluation results before and after content changes.
+
+The goal is to make GEO optimization more systematic, transparent, and evidence-driven.
 
 ## ✨ Key Features
 
+The following features describe CiteForge's intended capabilities. Their implementation status should be documented and updated as development progresses.
+
 ### 1. Answer Fidelity Checker
 
-Evaluates whether information in AI-generated answers accurately reflects the claims and evidence available on the source website.
+Evaluates whether claims in AI-generated answers accurately reflect the information and evidence available on the source website.
 
 ### 2. Citation Stability Analyzer
 
-Tracks citation results across repeated evaluations to identify changes in whether and how often a source is referenced.
+Compares citation outcomes across repeated evaluations to identify changes in whether and how consistently a source is referenced.
 
 ### 3. GEO Benchmarking System
 
-Measures content performance using evaluation metrics such as citation rate, query coverage, claim accuracy, and citation stability.
+Evaluates content using defined metrics, including citation rate, query coverage, claim accuracy, and citation stability.
 
 ### 4. Self-Improving GEO Assistant
 
-Recommends targeted content improvements based on evaluation results and supports retesting to compare performance before and after changes.
+Identifies weak or unclear content and proposes targeted improvements. Where supported, subsequent evaluations can help compare results before and after those changes.
 
-### 5. Integrity Auditor
+### 5. Website Integrity Auditor
 
-Checks website accessibility, compares responses returned for configured user-agent strings, inspects structured data, and examines robots.txt and sitemap availability.
+Inspects website accessibility, structured data, `robots.txt`, sitemap availability, and responses to configured user-agent strings. These checks help identify potential discoverability and content-delivery issues.
 
 ### 6. Evidence-Based Reporting
 
-Brings evaluation results together into a scorecard so users can identify content strengths, weaknesses, and potential next steps.
-
-Note: These describe the planned capabilities. Individual features will be marked complete only after implementation and testing.
+Consolidates evaluation results into a scorecard that helps users understand observed strengths, weaknesses, and potential next steps.
 
 ## 🔄 End-to-End Workflow
 
-1. Topic Input: The user provides a topic, website, or target content.
-2. Query Strategist: Relevant queries are prepared for evaluation.
-3. Page Builder: Website content and relevant structured data are prepared or analyzed.
-4. Citation Arena: Supported AI search systems are tested for relevant answers and citations.
-5. Performance Scoring: Citation rate, query coverage, claim accuracy, and stability are evaluated.
-6. Editor Agent: The system proposes improvements for weak or unclear content.
-7. Integrity Audit: Website accessibility, structured data, and configured bot responses are checked.
-8. Retesting & Reporting: Results are compared and summarized in an evidence-based report.
+CiteForge is designed around the following pipeline:
 
-## 🛠️ Proposed Technology Stack
+1. **Topic Input:** The user supplies a topic, target URL, or relevant content.
+2. **Query Strategist:** Relevant evaluation queries are prepared.
+3. **Page Builder:** Target content is analyzed, or content and supporting page elements are prepared where required.
+4. **Citation Arena:** Supported AI search systems are evaluated for relevant answers and source citations.
+5. **Performance Scoring:** Results are assessed using defined visibility, accuracy, and consistency metrics.
+6. **Editor Agent:** Targeted content improvements are proposed based on the observed weaknesses.
+7. **Integrity Audit:** Website accessibility, structured data, and configured crawler responses are checked.
+8. **Retesting and Reporting:** Results are summarized and compared to assess observed changes.
 
-Component| Technology / Approach
-Programming Language| Python
-AI Integration| LLM API
-Search Integration| Live web search API
-Information Retrieval| BM25 and embeddings
-Content Generation| HTML and CSS
-Structured Data| JSON-LD
-Version Control| Git and GitHub
-Deployment| GitHub Pages or Netlify for a compatible frontend
+*The availability of individual stages depends on the current implementation and the integrations configured for a particular run.*
 
-The final technology choices will depend on the team's implementation and integration requirements.
+## 🛠️ Technology Stack
 
-## 🏗️ Proposed Project Structure
+| Component | Technology / Approach |
+|---|---|
+| Programming language | Python |
+| AI integration | Large language model (LLM) API |
+| Search integration | Live web search API |
+| Information retrieval | BM25 and embeddings |
+| Content generation | HTML and CSS |
+| Structured data | JSON-LD |
+| Version control | Git and GitHub |
+| Deployment | Web hosting compatible with the implemented backend and frontend |
 
+The final stack depends on the implementation and integration requirements. Technologies listed here represent the intended approach and should be verified against the actual codebase.
+
+## 🏗️ Project Structure
+
+The following is a conceptual structure for organizing CiteForge as it develops:
+
+```text
 CiteForge/
 ├── README.md
 ├── .gitignore
@@ -106,51 +129,72 @@ CiteForge/
 │   ├── editor_agent/
 │   └── integrity_auditor/
 └── tests/
+```
 
-This is the proposed structure. Directories should be updated as the team finalizes and implements the modules.
+This structure is illustrative, not a representation of the current repository layout. Update it as the codebase evolves.
 
 ## 📊 Evaluation Metrics
 
-- Citation Rate: How often the evaluated website is cited across eligible test queries.
-- Query Coverage: The proportion of test queries for which relevant website information is represented.
-- Claim Accuracy: The degree to which evaluated answer claims are supported by available evidence.
-- Citation Stability: How consistently citation results appear across repeated tests.
-- Integrity Checks: Results of website accessibility, structured-data, and configured bot-response checks.
+CiteForge aims to use clearly defined metrics to evaluate GEO performance.
 
-Each metric will require a defined calculation method and a documented test procedure.
+| Metric | Purpose |
+|---|---|
+| **Citation Rate** | Measures how often the target website is cited across eligible test queries. |
+| **Query Coverage** | Measures the proportion of test queries for which relevant information from the target website is represented. |
+| **Claim Accuracy** | Assesses how well evaluated answer claims are supported by available source evidence. |
+| **Citation Stability** | Measures the consistency of citation outcomes across repeated evaluations. |
+| **Integrity Checks** | Records the results of accessibility, structured-data, sitemap, robots.txt, and configured user-agent checks. |
+
+Each metric requires a documented calculation method, a defined evaluation scope, and a repeatable testing procedure. Results should include relevant test conditions wherever possible.
 
 ## 🧪 Testing and Validation
 
 The planned validation process includes:
 
-- Testing each module independently.
-- Checking citation extraction and URL handling.
+- Testing individual modules independently.
+- Validating URL handling and citation extraction.
 - Comparing answer claims against source evidence.
-- Repeating queries to measure citation variation.
-- Testing website integrity checks on controlled sample pages.
+- Repeating evaluations to measure citation variation.
+- Testing integrity checks against controlled sample websites.
 - Comparing evaluation results before and after content changes.
+- Recording errors, limitations, and test conditions to support reproducibility.
+
+Testing should distinguish between successful execution, observed results, and conclusions supported by the available evidence.
 
 ## 🚀 Future Scope
 
-- Competitor citation-gap analysis.
-- Source freshness and accessibility monitoring.
-- Historical GEO performance dashboards.
-- Explainable content-improvement recommendations.
-- Expanded support for AI search providers.
-- Automated regression testing for content changes.
+Potential extensions include:
+
+- **Competitor citation-gap analysis:** Identify queries where competing sources are cited more frequently.
+- **Historical performance dashboards:** Track GEO evaluation results over time.
+- **Source freshness monitoring:** Identify potentially outdated or inaccessible content.
+- **Explainable recommendations:** Connect each proposed change to an observed issue or evaluation result.
+- **Expanded provider support:** Evaluate additional AI search and answer systems.
+- **Automated regression testing:** Detect changes in citation behavior after website updates.
+
+These extensions are potential future improvements rather than guaranteed capabilities.
 
 ## 👥 Team and Contributions
 
-CiteForge is being developed collaboratively as a hackathon project. Team members contribute to research, documentation, implementation, testing, and presentation.
+CiteForge is being developed collaboratively as a hackathon project, with contributions spanning research, documentation, implementation, testing, and presentation.
 
-Contributions should be made through clearly scoped changes and reviewed before integration into the main branch.
+Contributions should be scoped clearly, tested where applicable, and reviewed before integration into the main branch.
 
-## ⚠️ Limitations
+## ⚠️ Limitations and Responsible Interpretation
 
-AI search results may vary depending on the query, provider, location, model, and time of evaluation. User-agent comparisons alone cannot prove that a website treats every crawler differently or establish the cause of a response difference.
+AI-generated answers and citation behavior can vary depending on the query, provider, model, location, and evaluation time. Results from one provider or test run may not generalize to other systems or conditions.
 
-CiteForge's results should therefore be interpreted as measured observations under documented testing conditions, not as guarantees of AI search ranking or citation outcomes.
+Additional considerations include:
+
+- Citation rate alone does not establish content quality or factual correctness.
+- Claim-accuracy evaluations depend on the quality and completeness of the available evidence.
+- Repeated evaluations measure observed variation but do not guarantee future citation behavior.
+- User-agent comparisons can identify response differences, but do not independently establish their cause or prove how every crawler is treated.
+- A successful integrity check does not guarantee that an AI system will discover or cite a website.
+- Content recommendations and generated pages require review before publication.
+
+CiteForge is intended to support evaluation and informed decision-making, not guarantee AI search rankings, citations, or traffic.
 
 ## 📄 License
 
-A project license will be specified once the team finalizes the repository's licensing terms.
+The repository's license has not yet been specified. A license should be selected and added once the team finalizes the terms under which the project may be used, modified, and distributed
